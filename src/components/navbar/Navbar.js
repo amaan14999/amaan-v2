@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 
 const logo = (
   <Image
-    src="{/Logo.png}"
+    src="/Logo.png"
     height={36}
     width={36}
     alt="Amaan"
