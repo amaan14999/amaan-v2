@@ -1,11 +1,11 @@
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 import { DM_Sans } from "next/font/google";
 import { DM_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
-// import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styles/globals.css";
+import "./styles/compose.css";
 
-// const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({
   subsets: ["latin"],
   preload: true,
@@ -76,6 +76,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <div className="mt-20">{children}</div>
+        <Footer />
       </body>
     </html>
   );

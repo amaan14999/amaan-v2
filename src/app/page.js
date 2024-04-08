@@ -2,6 +2,13 @@ import Image from "next/image";
 import Text from "@/components/text/Text";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 import LinkCTA from "@/components/link-cta/LinkCTA";
+import ExternalLink from "@/components/external-link/ExternalLink";
+import {
+  CodeSimple,
+  Briefcase,
+  ChartLine,
+  GlobeSimple,
+} from "@phosphor-icons/react/dist/ssr";
 export default function Home() {
   return (
     <>
@@ -14,8 +21,8 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <Text>
-              A full stack developer building fast, beautiful and accessible
-              website and apps.
+              A Full-stack developer building fast, accessible, and user-centric
+              websites and apps.
             </Text>
           </FadeInSection>
           <div className="flex items-center justify-start gap-2 sm:gap-4">
@@ -52,7 +59,7 @@ export default function Home() {
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-3 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
               <p className="text-center text-lg sm:text-xl font-serif font-thin text-gray-600">
-                Photographer
+                Technical Writer
               </p>
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-4 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
@@ -67,20 +74,100 @@ export default function Home() {
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-3 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
               <p className="text-center text-lg sm:text-xl font-serif font-thin text-gray-600">
-                Designer
+                Photographer
               </p>
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-2 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
               <p className="text-center text-lg sm:text-xl font-serif font-thin text-gray-600">
-                SEO Expert
+                Bookworm
               </p>
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-3 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
               <p className="text-center text-lg sm:text-xl font-serif font-thin text-gray-600">
-                Shinzo wo Sasageyo
+                Shinzo wo Sasageyo ✊🏻
               </p>
             </FadeInSection>
           </div>
+        </section>
+        <section id="about" className="my-12 py-12 space-y-12 sm:space-y-20">
+          <FadeInSection>
+            <h3 className="text-3xl sm:text-4xl font-medium">About Me</h3>
+            <Text>Here&apos; a little bit about me and my work!</Text>
+          </FadeInSection>
+          <FadeInSection className="flex flex-col sm:flex-row gap-8 sm:gap-20 items-center">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+              <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
+                <CodeSimple size={32} weight="bold" className="text-cyan-400" />
+              </div>
+            </div>
+            <Text className="!m-0">
+              I am a{" "}
+              <span className="emphasis">Full-Stack TypeScript Developer</span>{" "}
+              specializing in front-end development. I am proficient with with
+              React, Node, GraphQL, SQL and Redis. I also enjoy working with Go
+              and Rust for building backend services and CLI tools.
+            </Text>
+          </FadeInSection>
+          <FadeInSection className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-20 items-center">
+            <Text className="!m-0">
+              I have <span className="emphasis">more than 2 years</span> of
+              experience in building web experiences, ranging from simple
+              landing pages, complex web applications and chrome extensions. I
+              am also fairly experienced with creating and maintaining developer
+              SDKs and open source packages.
+            </Text>
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+              <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
+                <Briefcase size={32} weight="bold" className="text-cyan-400" />
+              </div>
+            </div>
+          </FadeInSection>
+          <FadeInSection className="flex flex-col sm:flex-row gap-8 sm:gap-20 items-center">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+              <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
+                <ChartLine size={32} weight="bold" className="text-cyan-400" />
+              </div>
+            </div>
+            <Text className="!m-0">
+              I love open source and I am the creator and maintainer of{" "}
+              <ExternalLink href="https://github.com/sassy-labs/datepicker">
+                sassy-datepicker
+              </ExternalLink>{" "}
+              - a date picker library for React, which has{" "}
+              <span className="emphasis">60K downloads in 2024</span>. I have
+              also contributed to libraries like{" "}
+              <ExternalLink href="https://github.com/validatorjs/validator.js">
+                validatorjs
+              </ExternalLink>{" "}
+              and{" "}
+              <ExternalLink href="https://github.com/supabase">
+                supabase
+              </ExternalLink>
+              .
+            </Text>
+          </FadeInSection>
+          <FadeInSection className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-20 items-center">
+            <Text className="!m-0">
+              I also work with local businesses to{" "}
+              <span className="emphasis">design</span>, build and maintain their
+              website and web applications. I also provide services like{" "}
+              <span className="emphasis">SEO/SMO optimization</span>, technical
+              advice, and consultation for building an online presence for
+              businesses.
+            </Text>
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+              <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
+                <GlobeSimple
+                  size={32}
+                  weight="bold"
+                  className="text-cyan-400"
+                />
+              </div>
+            </div>
+          </FadeInSection>
+          <FadeInSection delay={0.2}>
+            <LinkCTA href="/about" label="Know More" />
+          </FadeInSection>
         </section>
       </main>
     </>
