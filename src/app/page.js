@@ -9,6 +9,9 @@ import {
   ChartLine,
   GlobeSimple,
 } from "@phosphor-icons/react/dist/ssr";
+
+const year = new Date().getFullYear() - 2016;
+
 export default function Home() {
   return (
     <>
@@ -102,19 +105,17 @@ export default function Home() {
             </div>
             <Text className="!m-0">
               I am a{" "}
-              <span className="emphasis">Full-Stack TypeScript Developer</span>{" "}
+              <span className="emphasis">Full-Stack JavaScript Developer</span>{" "}
               specializing in front-end development. I am proficient with with
-              React, Node, GraphQL, SQL and Redis. I also enjoy working with Go
-              and Rust for building backend services and CLI tools.
+              React, Node, Next.JS, and SQL. I also enjoy working with Python
+              Flask and Django for building backend services.
             </Text>
           </FadeInSection>
           <FadeInSection className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-20 items-center">
             <Text className="!m-0">
-              I have <span className="emphasis">more than 2 years</span> of
-              experience in building web experiences, ranging from simple
-              landing pages, complex web applications and chrome extensions. I
-              am also fairly experienced with creating and maintaining developer
-              SDKs and open source packages.
+              With <span className="emphasis">over 2 years</span> of hands-on
+              experience, I've developed a wide range of web projects, from
+              sleek landing pages to comprehensive standalone web applications.
             </Text>
             <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
@@ -129,31 +130,30 @@ export default function Home() {
               </div>
             </div>
             <Text className="!m-0">
-              I love open source and I am the creator and maintainer of{" "}
-              <ExternalLink href="https://github.com/sassy-labs/datepicker">
-                sassy-datepicker
-              </ExternalLink>{" "}
-              - a date picker library for React, which has{" "}
-              <span className="emphasis">60K downloads in 2024</span>. I have
-              also contributed to libraries like{" "}
-              <ExternalLink href="https://github.com/validatorjs/validator.js">
-                validatorjs
-              </ExternalLink>{" "}
-              and{" "}
-              <ExternalLink href="https://github.com/supabase">
-                supabase
+              I love open source and actively contribute to various projects,
+              making a mark with a significant PR merge by{" "}
+              <ExternalLink href="https://github.com/juspay/hyperswitch">
+                Juspay's Hyperswitch
               </ExternalLink>
               .
+              <br />
+              In my free time, I love participating in hackathons and have won
+              many, including{" "}
+              <span className="emphasis">MLH High School Hacks.</span>
             </Text>
           </FadeInSection>
           <FadeInSection className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-20 items-center">
             <Text className="!m-0">
-              I also work with local businesses to{" "}
-              <span className="emphasis">design</span>, build and maintain their
-              website and web applications. I also provide services like{" "}
-              <span className="emphasis">SEO/SMO optimization</span>, technical
-              advice, and consultation for building an online presence for
-              businesses.
+              Besides coding, I'm a passionate photographer of{" "}
+              <span className="emphasis">
+                over <span>{year}</span> years
+              </span>{" "}
+              . I love{" "}
+              <ExternalLink href="https://www.instagram.com/_thelenses_/">
+                capturing the beauty
+              </ExternalLink>{" "}
+              of the world around me. When I'm not behind the camera, I indulge
+              in reading, anime, and binge-watching TV series.
             </Text>
             <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
