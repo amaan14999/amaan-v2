@@ -98,7 +98,7 @@ export default function Home() {
             <Text>Here&apos; a little bit about me and my work!</Text>
           </FadeInSection>
           <FadeInSection className="flex flex-col sm:flex-row gap-8 sm:gap-20 items-center">
-            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-cyan-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
                 <CodeSimple size={32} weight="bold" className="text-cyan-400" />
               </div>
@@ -117,14 +117,14 @@ export default function Home() {
               experience, I've developed a wide range of web projects, from
               sleek landing pages to comprehensive standalone web applications.
             </Text>
-            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-cyan-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
                 <Briefcase size={32} weight="bold" className="text-cyan-400" />
               </div>
             </div>
           </FadeInSection>
           <FadeInSection className="flex flex-col sm:flex-row gap-8 sm:gap-20 items-center">
-            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-cyan-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
                 <ChartLine size={32} weight="bold" className="text-cyan-400" />
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
               of the world around me. When I'm not behind the camera, I indulge
               in reading, anime, and binge-watching TV series.
             </Text>
-            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-red-100">
+            <div className="w-48 h-48 flex-shrink-0 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-2xl p-4 shadow-2xl shadow-cyan-100">
               <div className="w-full h-full flex items-center justify-center bg-white rounded-xl shadow-inner">
                 <GlobeSimple
                   size={32}
