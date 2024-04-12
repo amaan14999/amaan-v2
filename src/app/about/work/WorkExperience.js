@@ -7,44 +7,46 @@ import { TimelineSection, TimelineView } from "./timeline";
 
 const data = [
   {
-    title: "Full Stack Developer",
+    title: "Software Developer Intern",
     company: {
-      name: "Amazing Tech Solutions",
-      url: "https://amazingtechsolutions.example.com",
+      name: "HappyFox Technologies",
+      url: "https://www.happyfox.com",
     },
-    from: "Jan 2022",
+    from: "Jan 2024",
     to: "Present",
     description: [
-      "Lead the development of a flagship project, enhancing the product’s scalability and performance.",
-      "Implemented a series of microservices, improving system reliability and service decoupling.",
-      "Refactored legacy codebase, resulting in a 50% reduction in loading times and improved code maintainability.",
+      "Currently working on the migration of HappyFox Technologies' existing Django-based website to a Wagtail CMS-based architecture, significantly reducing development time and dependency on developers by streamlining content management processes.",
+      "Developed a fully responsive pricing page for HappyFox Helpdesk using React.js and Tailwind CSS, incorporating dynamic functionalities and API integrations to enhance user interactions and backend communications.",
+      "Designed and implemented modular Django models within Wagtail, utilizing StreamField blocks and structures like ListBlock and StructBlock to boost site modularity and allow non-technical users to easily manage and update content.",
+      "Managed the database transition from MySQL to PostgreSQL, enhancing the CMS's performance and scalability, which supported a 40% increase in data handling capacity and improved overall site functionality.",
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Open Source Contributor",
     company: {
-      name: "Innovative Startups Inc.",
-      url: "https://innovativestartups.example.com",
+      name: "HyperSwitch - Juspay",
+      url: "https://hyperswitch.io",
     },
-    from: "May 2020",
-    to: "Dec 2021",
+    from: "Oct 2023",
+    to: "Nov 2023",
     description: [
-      "Developed and maintained the front-end portion of the application using React and Redux.",
-      "Collaborated closely with UX/UI designers to implement new features.",
-      "Optimized application for maximum speed and scalability, improving the Core Web Vitals scores by over 30%.",
+      "Enhanced payment tracking capabilities within HyperSwitch, utilizing Rust to streamline the merchant experience by simplifying the process of locating payments in the connector dashboard, improving transaction tracking efficiency by 30%.",
+      "Collaborated on the implementation of a new ID system in RouterData, which improved compatibility with existing connector APIs by 25% and enhanced the management and security of payment requests.",
+      "Contributed to system architecture optimizations that resulted in a 20% faster data retrieval time, facilitating quicker and more reliable payment processing for users across the connector dashboard.",
     ],
   },
   {
-    title: "Junior Web Developer",
+    title: "Full Stack Developer Intern",
     company: {
-      name: "Creative Digital Agency",
+      name: "Celebal Technologies",
+      url: "https://celebaltech.com/",
     },
-    from: "Sep 2018",
-    to: "Apr 2020",
+    from: "May 2023",
+    to: "July 2023",
     description: [
-      "Assisted in the development of web applications for a variety of clients, focusing on HTML, CSS, and JavaScript.",
-      "Contributed to team meetings and provided valuable input for website design and structure.",
-      "Helped improve website accessibility and implemented SEO best practices across multiple projects.",
+      "Developed a secure e-learning platform using React.js, implementing private routing and integrating Auth0 for robust user authentication during login, which enhanced security and user trust.",
+      "Designed and utilized AWS S3 buckets for efficient image storage on the e-learning platform, integrating a CDN to achieve a 60% improvement in load times and a 40% reduction in server load, significantly enhancing content delivery and accessibility.",
+      "Engineered a responsive shopping cart feature using React hooks, employing Context API and Redux for optimal state management, which reduced load times by 20% and improved the user experience with real-time updates, boosting overall site engagement.",
     ],
   },
 ];
