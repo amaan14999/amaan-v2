@@ -49,7 +49,7 @@ export const TechStack = () => {
   });
 
   return (
-    <section id="tech-stack" className="py-24">
+    <section id="tech-stack" className="pb-24 pt-16">
       <FadeInSection>
         <h2 className="text-2xl sm:text-3xl font-medium">Tech Stack</h2>
         <Text>Languages, libraries, and frameworks I know and use.</Text>

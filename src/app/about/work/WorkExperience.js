@@ -1,8 +1,13 @@
 "use client";
 import React from "react";
-import { ArrowSquareOut } from "@phosphor-icons/react";
+import {
+  ArrowSquareOut,
+  FileArrowDown,
+  ArrowDown,
+} from "@phosphor-icons/react";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 import Text from "@/components/text/Text";
+import Link from "next/link";
 import { TimelineSection, TimelineView } from "./timeline";
 
 const data = [
@@ -101,6 +106,16 @@ const WorkExperience = () => {
           </FadeInSection>
         </TimelineView>
       ))}
+      <FadeInSection delay={0.2}>
+        <Link
+          href={"https://resume.itsamaan.me/"}
+          target="_blank"
+          className="group inline-flex mt-8 py-2 font-serif text-md sm:text-xl gap-1 text-cyan-400 items-center hover:text-cyan-500"
+        >
+          Resume
+          <ArrowSquareOut weight="bold" size={16} />
+        </Link>
+      </FadeInSection>
     </section>
   );
 };
