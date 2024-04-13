@@ -7,7 +7,7 @@ import {
   PaperPlaneTilt,
   XCircle,
 } from "@phosphor-icons/react";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import ButtonCTA from "../button-cta/ButtonCTA";
 import FadeInSection from "../fade-in-section/FadeInSection";
 
@@ -37,6 +37,8 @@ const validateMessage = (message) => {
 
 const emptyField = { value: "", error: null };
 
+const errorField = (error) => ({ value: "", error });
+
 const ContactForm = () => {
   const [name, setName] = useState(emptyField);
   const [email, setEmail] = useState(emptyField);
@@ -64,6 +66,7 @@ const ContactForm = () => {
       setName(emptyField);
       setEmail(emptyField);
       setMessage(emptyField);
+      console.log("Message sent successfully");
       toast.success(
         "I have received your message, I will get back to you soon."
       );
@@ -71,7 +74,21 @@ const ContactForm = () => {
       if (error.response) {
         const status = error.response.status;
         if (status === 400) {
+          const fieldErrors = error.response.data.fieldErrors;
+          setName((prev) => ({
+            ...prev,
+            error: fieldErrors.name ? fieldErrors.name.join(", ") : null,
+          }));
+          setEmail((prev) => ({
+            ...prev,
+            error: fieldErrors.email ? fieldErrors.email.join(", ") : null,
+          }));
+          setMessage((prev) => ({
+            ...prev,
+            error: fieldErrors.message ? fieldErrors.message.join(", ") : null,
+          }));
           setFormErrors(error.response.data);
+          toast.error("Please fix the errors shown in the form and retry.");
         } else if (status === 404) {
           toast.error("We are not accepting responses right now.");
         } else {
@@ -98,7 +115,7 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="John Doe"
-          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 rounded-xl"
+          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 rounded-xl focus:outline-cyan-500"
           value={name.value}
           onChange={(e) =>
             setName({
@@ -125,7 +142,7 @@ const ContactForm = () => {
           id="email"
           type="email"
           placeholder="johndoe@example.com"
-          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 rounded-xl"
+          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 rounded-xl focus:outline-cyan-500"
           value={email.value}
           onChange={(e) =>
             setEmail({
@@ -152,7 +169,7 @@ const ContactForm = () => {
           id="message"
           name="message"
           placeholder="Your message here..."
-          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 min-h-[2.7rem] h-48 rounded-xl"
+          className="px-3 py-2 bg-white border border-gray-300 text-md sm:text-lg mt-2 text-gray-800 placeholder:text-gray-500/75 min-h-[2.7rem] h-48 rounded-xl focus:outline-cyan-500"
           value={message.value}
           onChange={(e) =>
             setMessage({
@@ -172,7 +189,7 @@ const ContactForm = () => {
       </FadeInSection>
 
       <FadeInSection delay={0.6}>
-        <ButtonCTA type="submit" disabled={submitting} className="mt-2">
+        <ButtonCTA type="submit" disabled={submitting} className="mt-6">
           <span>Send Message</span>
           {submitting ? (
             <CircleNotch weight="bold" className="ml-4 animate-spin" />
@@ -181,6 +198,7 @@ const ContactForm = () => {
           )}
         </ButtonCTA>
       </FadeInSection>
+      <Toaster />
     </form>
   );
 };

@@ -33,10 +33,10 @@ const ContactPage = () => {
                       E-Mail
                     </p>
                     <ExternalLink
-                      href="mailto:siddharthborderwala@gmail.com"
+                      href="mailto:amaan14999@gmail.com"
                       className="text-sm sm:text-base break-words"
                     >
-                      siddharthborderwala@gmail.com
+                      amaan14999@gmail.com
                     </ExternalLink>
                   </div>
                 </FadeInSection>
@@ -54,10 +54,10 @@ const ContactPage = () => {
                       Twitter
                     </p>
                     <ExternalLink
-                      href="https://twitter.com/sidborderwala"
+                      href="https://twitter.com/not_iitian"
                       className="text-sm sm:text-base break-words"
                     >
-                      @sidborderwala
+                      @not_iitian
                     </ExternalLink>
                   </div>
                 </FadeInSection>
@@ -75,10 +75,10 @@ const ContactPage = () => {
                       Telegram
                     </p>
                     <ExternalLink
-                      href="https://t.me/siddharthborderwala"
+                      href="https://t.me/amaan14999"
                       className="text-sm sm:text-base break-words"
                     >
-                      @siddharthborderwala
+                      @amaan14999
                     </ExternalLink>
                   </div>
                 </FadeInSection>
