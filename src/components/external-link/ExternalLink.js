@@ -2,6 +2,10 @@
 import React from "react";
 
 const ExternalLink = ({ href, className, children, ...props }) => {
+  if (!href) {
+    console.error("ExternalLink requires an href");
+    return null; // Or render some fallback
+  }
   return (
     <a
       href={href}

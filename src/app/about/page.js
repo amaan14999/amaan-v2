@@ -3,9 +3,6 @@ import FadeInSection from "@/components/fade-in-section/FadeInSection";
 import LinkCTA from "@/components/link-cta/LinkCTA";
 import Text from "@/components/text/Text";
 import Image from "next/image";
-import Link from "next/link";
-
-import { FileArrowDown, ArrowDown } from "@phosphor-icons/react/dist/ssr";
 import WorkExperience from "./work/WorkExperience";
 import { TechStack } from "./tech-stack/TechStack";
 const About = () => {
