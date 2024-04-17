@@ -68,7 +68,7 @@ export const metadata = {
   description:
     "A Full-stack developer building fast, accessible, and user-centric websites and apps",
   icons: {
-    shortcut: "/Logo.png",
+    shortcut: "/Logo.ico",
     apple: "/Logo.png",
     icon: "/Logo.png",
   },
