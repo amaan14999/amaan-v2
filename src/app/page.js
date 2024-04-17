@@ -13,7 +13,7 @@ import {
 
 const year = new Date().getFullYear() - 2016;
 
-export const meta = {
+export const metadata = {
   openGraph: {
     title: "Amaan",
     description:
