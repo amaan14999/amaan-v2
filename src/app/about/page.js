@@ -61,7 +61,7 @@ const About = () => {
         >
           <Image
             alt="Amaan"
-            src={"/Avatar.jpg"}
+            src={"/Avatar.webp"}
             width={500}
             height={500}
             // @todo: Add blur data

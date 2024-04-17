@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata } from "next";
 import Text from "@/components/text/Text";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 import LinkCTA from "@/components/link-cta/LinkCTA";
@@ -11,6 +12,39 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 const year = new Date().getFullYear() - 2016;
+
+export const meta = {
+  openGraph: {
+    title: "Amaan",
+    description:
+      "A Full-stack developer building fast, accessible, and user-centric websites and apps",
+    url: "https://amaan-v2.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://amaan-v2.vercel.app/banner.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Amaan",
+      },
+    ],
+  },
+  twitter: {
+    site: "@not_iitian",
+    card: "summary_large_image",
+    title: "Amaan",
+    description:
+      "A Full-stack developer building fast, accessible, and user-centric websites and apps.",
+    images: [
+      {
+        url: "https://amaan-v2.vercel.app/banner.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Amaan",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
@@ -40,7 +74,7 @@ export default function Home() {
         <FadeInSection className="flex-[2] w-full flex items-center justify-center md:justify-end flex-shrink-0 py-4 sm:py-12 sm:py-auto">
           <Image
             alt="Amaan"
-            src={"/profile.jpg"}
+            src={"/profile.webp"}
             width={500}
             height={500}
             // @todo: Add blur data

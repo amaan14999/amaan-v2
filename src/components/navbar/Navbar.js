@@ -30,10 +30,10 @@ const navLinks = [
 
 const logo = (
   <Image
-    src="/Logo.png"
+    src="/Logo.webp"
     height={36}
     width={36}
-    alt="Siddharth Borderwala"
+    alt="Amaan"
     className="inline-block bg-white rounded-full border-none"
     style={{
       scale: 1.05,
