@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Metadata } from "next";
 import Text from "@/components/text/Text";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 import LinkCTA from "@/components/link-cta/LinkCTA";

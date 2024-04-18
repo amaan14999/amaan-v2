@@ -1,7 +1,10 @@
-"use client";
 import React from "react";
 import ExternalLink from "@/components/external-link/ExternalLink";
-import { Envelope, TelegramLogo, TwitterLogo } from "@phosphor-icons/react";
+import {
+  Envelope,
+  TelegramLogo,
+  TwitterLogo,
+} from "@phosphor-icons/react/dist/ssr";
 import ContactForm from "@/components/contact-form/ContactForm";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 

@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Text from "@/components/text/Text";
-import { LinkSimple } from "@phosphor-icons/react";
+import { LinkSimple } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = {
   title: "siteTitle",
