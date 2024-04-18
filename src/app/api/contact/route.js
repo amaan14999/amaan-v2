@@ -3,6 +3,9 @@ import zod from "zod";
 import stripIndent from "strip-indent";
 import { Resend } from "resend";
 import EmailTemplate from "@/email-templates/EmailTemplate";
+
+export const runtime = "edge";
+
 const contactFormValidator = zod.object({
   name: zod
     .string({
