@@ -5,6 +5,40 @@ import { Envelope, TelegramLogo, TwitterLogo } from "@phosphor-icons/react";
 import ContactForm from "@/components/contact-form/ContactForm";
 import FadeInSection from "@/components/fade-in-section/FadeInSection";
 
+export const metadata = {
+  title: "Contact | Amaan",
+  description:
+    "Reach out to me via email, Twitter, or Telegram. I am always open to new opportunities and collaborations.",
+  openGraph: {
+    title: "Contact | Amaan",
+    description:
+      "Reach out to me via email, Twitter, or Telegram. I am always open to new opportunities and collaborations.",
+    type: "website",
+    url: "https://itsamaan.me",
+    images: [
+      {
+        url: "https://itsamaan.me/banner.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Amaan",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@not_iitian",
+    title: "Contact | Amaan",
+    description:
+      "Reach out to me via email, Twitter, or Telegram. I am always open to new opportunities and collaborations.",
+    image: {
+      src: "https://itsamaan.me/banner.jpg",
+      alt: "Amaan",
+      width: 1920,
+      height: 1080,
+    },
+  },
+};
+
 const ContactPage = () => {
   return (
     <div className="pt-8">

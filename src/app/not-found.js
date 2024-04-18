@@ -4,11 +4,16 @@ import Link from "next/link";
 import Text from "@/components/text/Text";
 import { LinkSimple } from "@phosphor-icons/react";
 
+export const metadata = {
+  title: "siteTitle",
+  description: "Page Not Found - itsamaan.me",
+};
+
 const NotFoundPage = () => {
   return (
     <main
       className="w-constraint py-8 flex flex-col justify-center items-center"
-      style={{ height: "70vh" }} // Corrected '70svh' to '70vh'
+      style={{ height: "70vh" }}
     >
       <h1 className="text-4xl font-bold mt-8 text-center">Page not found</h1>
       <Text className="text-center">

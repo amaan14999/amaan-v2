@@ -18,11 +18,11 @@ export const metadata = {
     title: "Amaan",
     description:
       "A Full-stack developer building fast, accessible, and user-centric websites and apps",
-    url: "https://amaan-v2.vercel.app/",
+    url: "https://itsamaan.me/",
     type: "website",
     images: [
       {
-        url: "https://amaan-v2.vercel.app/banner.jpg",
+        url: "https://itsamaan.me/banner.jpg",
         width: 1920,
         height: 1080,
         alt: "Amaan",
@@ -37,7 +37,7 @@ export const metadata = {
       "A Full-stack developer building fast, accessible, and user-centric websites and apps.",
     images: [
       {
-        url: "https://amaan-v2.vercel.app/banner.jpg",
+        url: "https://itsamaan.me/banner.jpg",
         width: 1920,
         height: 1080,
         alt: "Amaan",

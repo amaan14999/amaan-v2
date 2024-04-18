@@ -63,7 +63,7 @@ const gelica = LocalFont({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://amaan-v2.vercel.app/"),
+  metadataBase: new URL("https://itsamaan.me"),
   title: "Amaan",
   description:
     "A Full-stack developer building fast, accessible, and user-centric websites and apps",

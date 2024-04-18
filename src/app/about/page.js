@@ -5,6 +5,41 @@ import Text from "@/components/text/Text";
 import Image from "next/image";
 import WorkExperience from "./work/WorkExperience";
 import { TechStack } from "./tech-stack/TechStack";
+
+export const metadata = {
+  title: "About | Amaan",
+  description:
+    "Get to know more about me, my work experience, and the technologies I work with.",
+  openGraph: {
+    title: "About | Amaan",
+    description:
+      "Get to know more about me, my work experience, and the technologies I work with.",
+    type: "website",
+    url: "https://itsamaan.me",
+    images: [
+      {
+        url: "https://itsamaan.me/banner.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Amaan",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@not_iitian",
+    title: "About | Amaan",
+    description:
+      "Get to know more about me, my work experience, and the technologies I work with.",
+    image: {
+      src: "https://itsamaan.me/banner.jpg",
+      alt: "Amaan",
+      width: 1920,
+      height: 1080,
+    },
+  },
+};
+
 const About = () => {
   return (
     <>
@@ -33,26 +68,6 @@ const About = () => {
                 label="Tech Stack"
               />
             </FadeInSection>
-
-            {/* <FadeInSection delay={0.2}>
-              <Link
-                href={"https://resume.itsamaan.me/"}
-                target="_blank"
-                className="group flex mt-8 py-2 px-2 sm:px-4 font-serif text-md sm:text-lg gap-1 text-cyan-500 items-center"
-              >
-                Resume
-                <div className="relative w-4 h-4">
-                  <FileArrowDown
-                    className="absolute bottom-[0.5px] opacity-100 scale-100 group-hover:scale-0 transition-all group-hover:opacity-0 group-hover:translate-y-4"
-                    weight="bold"
-                  />
-                  <ArrowDown
-                    className="absolute bottom-[0.5px] opacity-0 scale-0 group-hover:scale-100 transition-all group-hover:opacity-100 -translate-y-4 group-hover:translate-y-0"
-                    weight="bold"
-                  />
-                </div>
-              </Link>
-            </FadeInSection> */}
           </div>
         </div>
         <FadeInSection
