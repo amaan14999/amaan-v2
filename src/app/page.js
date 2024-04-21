@@ -115,7 +115,7 @@ export default function Home() {
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-2 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
               <p className="text-center text-lg sm:text-xl font-serif font-thin text-gray-600">
-                Bookworm
+                Gamer
               </p>
             </FadeInSection>
             <FadeInSection className="w-full h-full col-span-1 md:col-span-3 row-span-1 px-6 py-12 flex flex-col items-center justify-center bg-white border border-gray-200/20 backdrop-blur-md rounded-xl shadow-2xl shadow-gray-900/10">
