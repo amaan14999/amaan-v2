@@ -33,7 +33,7 @@ async function sendContactFormEmail(name, email, message) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   return await resend.emails.send({
-    from: "Website Contact <contact@itsamaan.me>",
+    from: "Website Contact <contact@itsamaan.tech>",
     to: "Amaan <amaan14999@gmail.com>",
     subject: "Website Contact Form Submission",
     text: stripIndent(`

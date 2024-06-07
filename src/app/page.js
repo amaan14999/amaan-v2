@@ -17,11 +17,11 @@ export const metadata = {
     title: "Amaan",
     description:
       "A Full-stack developer building fast, accessible, and user-centric websites and apps",
-    url: "https://itsamaan.me/",
+    url: "https://itsamaan.tech/",
     type: "website",
     images: [
       {
-        url: "https://itsamaan.me/banner.jpg",
+        url: "https://itsamaan.tech/banner.jpg",
         width: 1920,
         height: 1080,
         alt: "Amaan",
@@ -36,7 +36,7 @@ export const metadata = {
       "A Full-stack developer building fast, accessible, and user-centric websites and apps.",
     images: [
       {
-        url: "https://itsamaan.me/banner.jpg",
+        url: "https://itsamaan.tech/banner.jpg",
         width: 1920,
         height: 1080,
         alt: "Amaan",

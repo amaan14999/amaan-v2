@@ -6,7 +6,7 @@ import { LinkSimple } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = {
   title: "siteTitle",
-  description: "Page Not Found - itsamaan.me",
+  description: "Page Not Found - itsamaan.tech",
 };
 
 const NotFoundPage = () => {

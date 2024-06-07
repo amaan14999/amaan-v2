@@ -59,7 +59,6 @@ export const TechStack = () => {
           ref={sidebar}
           className="space-y-8 h-fit sticky top-[25%] left-0 text-gray-800"
         >
-          {/* Sidebar content as per your design */}
           <h3
             className={`text-xl sm:text-2xl ${
               activeView === "languages" ? "text-cyan-400" : null

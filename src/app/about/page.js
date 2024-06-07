@@ -15,10 +15,10 @@ export const metadata = {
     description:
       "Get to know more about me, my work experience, and the technologies I work with.",
     type: "website",
-    url: "https://itsamaan.me",
+    url: "https://itsamaan.tech",
     images: [
       {
-        url: "https://itsamaan.me/banner.jpg",
+        url: "https://itsamaan.tech/banner.jpg",
         width: 1920,
         height: 1080,
         alt: "Amaan",
@@ -32,7 +32,7 @@ export const metadata = {
     description:
       "Get to know more about me, my work experience, and the technologies I work with.",
     image: {
-      src: "https://itsamaan.me/banner.jpg",
+      src: "https://itsamaan.tech/banner.jpg",
       alt: "Amaan",
       width: 1920,
       height: 1080,

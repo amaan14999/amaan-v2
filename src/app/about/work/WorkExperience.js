@@ -108,7 +108,7 @@ const WorkExperience = () => {
       ))}
       <FadeInSection delay={0.2}>
         <Link
-          href={"https://resume.itsamaan.me/"}
+          href={"https://resume.itsamaan.tech/"}
           target="_blank"
           className="group inline-flex mt-8 py-2 font-serif text-md sm:text-xl gap-1 text-cyan-400 items-center hover:text-cyan-500"
         >
