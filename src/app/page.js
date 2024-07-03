@@ -139,9 +139,9 @@ export default function Home() {
             <Text className="!m-0">
               I am a{" "}
               <span className="emphasis">Full-Stack JavaScript Developer</span>{" "}
-              specializing in front-end development. I am proficient with with
-              React, Node, Next.JS, and SQL. I also enjoy working with Python
-              Flask and Django for building backend services.
+              specializing in front-end development. I am proficient with React,
+              Node, Next.JS, and SQL. I also enjoy working with Python Flask and
+              Django for building backend services.
             </Text>
           </FadeInSection>
           <FadeInSection className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-20 items-center">
