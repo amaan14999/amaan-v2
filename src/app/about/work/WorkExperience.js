@@ -12,13 +12,23 @@ import { TimelineSection, TimelineView } from "./timeline";
 
 const data = [
   {
+    title: "Software Development Engineer",
+    company: {
+      name: "Thoughtworks",
+      url: "https://www.thoughtworks.com/",
+    },
+    from: "Aug 2024",
+    to: "Present",
+    description: ["Will update soon...😅"],
+  },
+  {
     title: "Software Developer Intern",
     company: {
       name: "HappyFox Technologies",
       url: "https://www.happyfox.com",
     },
     from: "Jan 2024",
-    to: "Present",
+    to: "Jun 2024",
     description: [
       "Currently working on the migration of HappyFox Technologies' existing Django-based website to a Wagtail CMS-based architecture, significantly reducing development time and dependency on developers by streamlining content management processes.",
       "Developed a fully responsive pricing page for HappyFox Helpdesk using React.js and Tailwind CSS, incorporating dynamic functionalities and API integrations to enhance user interactions and backend communications.",
