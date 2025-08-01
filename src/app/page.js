@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </div>
             <Text className="!m-0">
-              I am a <span className=" ">Full-Stack Developer</span>{" "}
+              I am a <span className="emphasis">Full-Stack Developer</span>{" "}
               specializing in back-end development. I am proficient with Java,
               SpringBoot, Python. I also enjoy working with React and Next.JS
               for building frontend services.
